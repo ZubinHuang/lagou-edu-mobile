@@ -1,0 +1,277 @@
+.toplogo {
+  width: 1200px;
+  margin: 0 auto;
+  height: 68px;
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+.toplogo div {
+  width: 110px;
+  height: 25px;
+  background-image: url(https://uc-res.mzres.com/resources/uc/wlogin/base/images/base.png);
+}
+.middle {
+  height: 750px;
+  overflow: hidden;
+  background-image: url(https://uc-res.mzres.com/resources/uc/wlogin/member/images/pic-flyme.png);
+  background-position: -175px 0px;
+  background-color: #eefcfd;
+}
+.middle-content {
+  float: right;
+  position: relative;
+  margin-top: 115px;
+  margin-right: 186px;
+  width: 368px;
+  height: 457px;
+  padding: 35px 35px 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 6px 8px #ccc;
+}
+.middle-content-way {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.middle-content-register {
+  margin-top: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.middle-content-register a {
+  font-size: 18px;
+  color: #000;
+}
+.middle-content-register span {
+  display: inline-block;
+  border-left: 2px solid #b3abab;
+  height: 15px;
+  margin: 0 32px;
+}
+.middle-content-register .code {
+  color: #7f7f7f;
+}
+.middle-content-register a:hover {
+  color: #000;
+}
+.middle-content-account {
+  width: 276px;
+  height: 46px;
+  padding: 0px 10px;
+  font-size: 14px;
+  border: 1px solid #dadada;
+  color: #474747;
+  margin-bottom: 20px;
+}
+.middle-content-account input {
+  height: 46px;
+  width: 277px;
+  border: none;
+  font-size: 14px;
+}
+.middle-content-verify {
+  position: relative;
+  width: 296px;
+  height: 44px;
+  background-color: #fcfcfc;
+  border: 1px solid #cccccc;
+  box-shadow: 0 -3px 10px #ccc inset;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+.middle-content-verify:hover {
+  box-shadow: 0 3px 10px #ccc inset;
+}
+.middle-content-verify img {
+  float: left;
+  height: 34px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 8px;
+}
+.middle-content-verify span {
+  float: left;
+}
+.middle-content-verify div {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  float: right;
+  width: 20px;
+  height: 20px;
+  background-image: url(https://static.geetest.com/static/wind/sprite.1.5.6.png);
+  background-position: 0px -105px;
+}
+.middle-content-state {
+  margin-bottom: 30px;
+}
+.middle-content-state input {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #ececec;
+  vertical-align: bottom;
+}
+.middle-content-state a {
+  margin-left: 7px;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+.middle-content-state a:hover {
+  color: #000;
+}
+.middle-content-button {
+  display: block;
+  width: 300px;
+  height: 46px;
+  background-color: #387aff;
+  line-height: 46px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+.middle-content-button:hover {
+  background-color: #3058df;
+  color: #fff;
+}
+.middle-content-bottom a {
+  color: #387aff;
+  font-size: 14px;
+}
+.middle-content-bottom a:hover {
+  color: #3058df;
+}
+.middle-content-bottom a:last-child {
+  float: right;
+}
+.footer {
+  width: 1000px;
+  margin: 0 auto;
+  /* background-color: pink; */
+  height: 130px;
+}
+.footer-top-left {
+  float: left;
+  padding-top: 50px;
+}
+.footer-top-left a,
+.footer-top-left s {
+  float: left;
+  color: black;
+  font-size: 14px;
+  position: relative;
+}
+
+.footer-top-left img {
+  float: left;
+  height: 10px;
+  width: 1px;
+  background-color: #888;
+  margin: 0px 5px;
+}
+.footer-top-left s {
+  margin-left: 24px;
+  float: left;
+}
+.language {
+  position: absolute;
+  top: -81px;
+  left: -14px;
+  text-align: center;
+  width: 77px;
+  height: 80px;
+  background-color: #fefefe;
+  box-shadow: 0 0 5px #ccc;
+  display: none;
+}
+.footer-top-left a:hover .language {
+  display: block;
+}
+.language span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+.language span:first-child {
+  border-bottom: 1px solid #e4e7e9;
+  box-sizing: border-box;
+  color: #1daeed;
+}
+.footer-top-left > span {
+  /* display: inline-block; */
+  width: 64px;
+  height: 20px;
+  background-color: #32a5e7;
+  border-radius: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 15px;
+  float: left;
+}
+.footer-top-right {
+  float: right;
+  margin-top: 50px;
+  position: relative;
+}
+.footer-top-right span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  /* border: 1px solid #cfcfcf; */
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.footer-top-right span:first-child {
+  background-image: url(https://uc-res.mzres.com/resources/uc/wlogin/base/images/base.png);
+  background-position: -218px -91px;
+}
+.footer-top-right span:nth-child(2) {
+  background-image: url(https://uc-res.mzres.com/resources/uc/wlogin/base/images/base.png);
+  background-position: -302px -91px;
+}
+.footer-top-right .qq {
+  background-image: url(https://uc-res.mzres.com/resources/uc/wlogin/base/images/base.png);
+  background-position: -344px -91px;
+}
+.footer-top-right span:first-child:hover {
+  background-position: -218px -137px;
+}
+.footer-top-right span:nth-child(2):hover {
+  background-position: -302px -137px;
+}
+.footer-top-right .qq:hover {
+  background-position: -344px -137px;
+}
+.footer-top-right img {
+  position: absolute;
+  top: -268px;
+  left: -95px;
+  display: none;
+}
+.footer-top-right span:hover + img {
+  display: block;
+}
+.footer-bottom {
+  margin-top: 10px;
+  color: #7f7f7f;
+  font-size: 12px;
+}
+.footer-bottom > a {
+  color: #7f7f7f;
+  font-size: 12px;
+}
+.footer-bottom > a:hover {
+  color: #2b2b2b;
+}
+.footer-bottom img {
+  width: 15px;
+  height: 14px;
+  vertical-align: bottom;
+}
+.footer-bottom span a {
+  color: #7f7f7f;
+}

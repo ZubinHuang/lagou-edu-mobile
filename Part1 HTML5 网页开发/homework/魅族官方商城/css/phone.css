@@ -1,0 +1,378 @@
+.slideshow {
+  background-image: url(../img/phonebeijing.jpg);
+  background-size: 2107px;
+  background-repeat: no-repeat;
+  background-position: -400px 0;
+  height: 450px;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.commodity {
+  background-color: #f4f4f4;
+  height: 2670px;
+}
+.container {
+  margin: 0 auto;
+  width: 1250px;
+}
+.container-topnav {
+  padding-bottom: 26px;
+}
+.container-topnav-left {
+  float: left;
+}
+.container-topnav-left h3 {
+  font-size: 27px;
+  font-weight: 500;
+  color: #515151;
+}
+.container-topan-right {
+  float: right;
+}
+.container-topan-right a {
+  font-size: 20px;
+  color: #343434;
+  font-weight: 200;
+  margin-right: 25px;
+  position: relative;
+}
+.container-topan-right s:first-child a {
+  color: #00c3f5;
+}
+.container-topan-right a:hover {
+  color: #00c3f5;
+}
+.container-topan-right s:last-child a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: -16px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid #000;
+}
+.container-topan-right s:last-child a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  right: -16px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid #000;
+}
+.commodity-content {
+  height: 550px;
+}
+.commodity-content div {
+  text-align: center;
+  float: left;
+  position: relative;
+  width: 400px;
+  height: 550px;
+  background-color: #fff;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.commodity-content div:hover {
+  box-shadow: 0 0 26px #ccc;
+}
+.commodity-content div:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.commodity-content img {
+  width: 330px;
+  height: 330px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.commodity-content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.commodity-content span {
+  display: block;
+  font-size: 16px;
+  color: #666666;
+  margin: 0 auto;
+  width: 270px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+}
+.commodity-content s {
+  font-size: 16px;
+  color: #c00;
+}
+.commodity-content em {
+  font-size: 24px;
+  color: #c00;
+  font-weight: 500;
+}
+.commodity-content p {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  background-color: #ff5489;
+  border-radius: 50%;
+}
+.commodity-content div:nth-child(5) p,
+.commodity-content div:nth-child(6) p,
+.commodity-content div:nth-child(7) p,
+.commodity-content div:nth-child(8) p {
+  background-color: #3d90f7;
+}
+
+.commodity-content ul {
+  position: absolute;
+  top: 380px;
+  left: 120px;
+  display: none;
+}
+.commodity-content div:hover > ul {
+  display: block;
+}
+.commodity-content li {
+  float: left;
+  height: 20px;
+  width: 20px;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+.commodity-content li:hover {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.commodity-content li a {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: pink;
+  border-radius: 50%;
+  margin-top: 1.5px;
+}
+.commodity-content li:first-child a {
+  background-image: url(https://openfile.meizu.com/group1/M00/07/67/Cgbj0F2wCvOAMJ7MAAARfgRallY579.png);
+  background-size: 15px;
+}
+.commodity-content li:nth-child(2) a {
+  background-image: url(https://openfile.meizu.com/group1/M00/07/67/Cgbj0F2wCvOAWIoaAAAQumAb0IQ155.png);
+  background-size: 15px;
+}
+.commodity-content li:nth-child(3) a {
+  background-image: url(https://openfile.meizu.com/group1/M00/07/7E/Cgbj0V2wCvOAXBtZAAAQmfSg29c559.png);
+  background-size: 15px;
+}
+.commodity-content div:nth-last-child(-n + 4) li:first-child a,
+.commodity-content div:nth-child(4) li:first-child a,
+.commodity-content div:nth-child(5) li:first-child a {
+  background-image: url(https://openfile.meizu.com/group1/M00/06/FD/Cgbj0Vw0T3KAVpPqAAAKRl5WFHo585.png);
+}
+.commodity-content div:nth-last-child(-n + 4) li:nth-child(2) a,
+.commodity-content div:nth-child(4) li:nth-child(2) a,
+.commodity-content div:nth-child(5) li:nth-child(2) a {
+  background-image: url(https://openfile.meizu.com/group1/M00/06/FD/Cgbj0Vw0T3SActowAAAJazF5kdU066.png);
+  background-size: 15px;
+}
+.commodity-content div:nth-last-child(-n + 4) li:nth-child(3) a,
+.commodity-content div:nth-child(4) li:nth-child(3) a,
+.commodity-content div:nth-child(5) li:nth-child(3) a {
+  background-image: url(https://openfile.meizu.com/group1/M00/06/FD/Cgbj0Vw0T3OAco2pAAAY2Ea5xv4546.png);
+  background-size: 15px;
+}
+.commodity-ad {
+  margin-top: 20px;
+  width: 100%;
+}
+.recommend {
+  background-color: #f4f4f4;
+  height: 560px;
+}
+.recommend-top h3 {
+  font-size: 26px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.recommend-content {
+  height: 400px;
+  background-color: #ffffff;
+  padding-bottom: 30px;
+}
+.recommend-content > div {
+  float: left;
+  text-align: center;
+  width: 310px;
+}
+.recommend-content > div > div {
+  height: 320px;
+}
+.recommend-content img {
+  height: 230px;
+  margin-top: 30px;
+}
+.recommend-content img:hover {
+  height: 250px;
+}
+.recommend-content p {
+  margin-bottom: 34px;
+  margin-bottom: 17px;
+  font-size: 22px;
+}
+.recommend-content s {
+  font-size: 14px;
+  color: #cc0000;
+}
+.recommend-content em {
+  font-size: 24px;
+  font-weight: 400;
+  color: #cc0000;
+}
+.recommend ul {
+  margin-top: 38px;
+  margin-left: 590px;
+}
+.recommend li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border: 1px solid #a1a1a1;
+  margin-left: 8px;
+  border-radius: 50%;
+}
+.recommend li:hover {
+  background-color: #a1a1a1;
+}
+/* 底部css */
+.footer {
+  height: 300px;
+}
+.footer-top {
+  height: 175px;
+  border-bottom: 1px solid #eeeeee;
+}
+.footer-top-left {
+  float: left;
+}
+.footer-top-left a {
+  float: left;
+  width: 150px;
+  text-align: center;
+  margin-top: 60px;
+}
+.footer-top-left a img {
+  height: 39px;
+  width: 50px;
+}
+.footer-top-left a p {
+  color: #999;
+  line-height: 30px;
+}
+.footer-top-right {
+  text-align: right;
+  margin-top: 50px;
+  float: right;
+}
+.footer-top-right p {
+  color: #999;
+  font-size: 12px;
+  line-height: 30px;
+}
+.footer-top-right h3 {
+  color: #00c3f5;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: -6px;
+  line-height: 40px;
+}
+.footer-top-right a {
+  float: right;
+  text-align: center;
+  line-height: 40px;
+  width: 110px;
+  height: 40px;
+  background-color: #00c3f5;
+  border-radius: 50px;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-bottom li a {
+  margin-top: 40px;
+  float: left;
+  color: #999;
+  height: 18px;
+  border-right: 1px solid #999;
+  padding-right: 15px;
+  margin-right: 15px;
+  line-height: 18px;
+}
+.footer-bottom li:last-child a {
+  border: 0;
+}
+.footer-bottom a:hover {
+  color: #00c3f5;
+}
+.footer-bottom-left {
+  color: #999;
+  margin-top: 10px;
+  float: left;
+}
+.footer-bottom-left a {
+  color: #999;
+  margin-right: 6px;
+}
+.footer-bottom-left span {
+  display: inline-block;
+}
+.footer-bottom-left span .cop {
+  height: 18px;
+  width: 14px;
+}
+.footer-bottom span img {
+  vertical-align: bottom;
+}
+.footer-bottom-righr {
+  position: relative;
+  float: right;
+}
+.footer-bottom-righr a > img {
+  height: 18px;
+  width: 21px;
+  vertical-align: middle;
+}
+.footer-bottom-righr a {
+  padding: 0 10px;
+  border-left: 1px solid #eeeeee;
+}
+.footer-bottom-righr a:first-child {
+  border: 0;
+}
+.footer-bottom-righr > img {
+  width: 180px;
+  position: absolute;
+  top: -190px;
+  right: 0;
+  display: none;
+}
+.footer-bottom-righr a:first-child:hover + .xcx {
+  display: block;
+}
+.wechat:hover + .shop {
+  display: block;
+}
