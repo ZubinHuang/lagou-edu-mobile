@@ -1,0 +1,58 @@
+/* 通栏的大盒子 */
+.login-banner {
+    width: 100%;
+    height: 120px;
+    background-color: #00B38A;
+}
+.login-banner-c {
+    /* 120-37 */
+    height: 83px;
+    padding-top: 37px;
+    background: url(../images/logo_ad.png) no-repeat left bottom;
+    background-size: 228px 120px;
+}
+/* 左侧盒子 */
+.login-banner-c  .ad{
+    float: left;
+    padding-left: 237px;
+}
+.login-banner-c .ad img {
+    /* 广告图片宽高330px 29px */
+     display: block;
+     width: 330px;
+     height: 29px;
+}
+.login-banner-c .ad p {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    cursor: default;
+}
+/* 右侧表单 */
+.login-banner-c  .login-form{
+    float: right;
+    margin-top: 5px;
+}
+.login-banner-c .login-form .tel{
+    float: left;
+    width: 212px;
+    height: 35px;
+    margin-right: 8px;
+    background-color: #fff;
+}
+
+.login-banner-c .login-form .yzm{
+    float: left;
+    width: 146px;
+    height: 35px;
+    margin-right: 8px;
+    background-color: #fff;
+}
+.login-banner-c .login-form .login-or-register{
+    float: left;
+    width: 105px;
+    height: 33px;
+    border: 1px solid #fff;
+    margin-right: 4px;
+    background-color: #fff;
+}

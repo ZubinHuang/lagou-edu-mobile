@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin垂直塌陷-同级和父子塌陷</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    /* 同级元素： 如果两个元素垂直方向有间距， 只需要设置给一个元素， 不要进行拆分 */
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      margin-bottom: 100px;
+    }
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      /* margin-top: 100px; */
+    }
+  </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新增表达属性</title>
+</head>
+<body>
+    <form action="">
+      <!-- required校验提示 -->      
+      姓名：<input type="text" required="required" placeholder="请输入姓名"><br>
+      邮箱：<input type="email" required="required"><br>
+      <!-- 自动聚焦属性，页面加载完成自动聚焦到指定表单，一般页面中放1个 -->
+      <!--
+        当用户在字段开始键入时，浏览器基于之前键入过的值，应
+        该显示出在字段中填写的选项。
+        默认已经打开，如 autocomplete=” on “
+        关闭 autocomplete =” off”
+        -需要放在表单内同时加上name属性
+        -同时成功提交
+      -->
+      搜索框： <input type="search" autofocus="autofocus" autocomplete="on" name="sousuo">
+      <input type="submit" value="提交">
+    </form>
+</body>
+</html>

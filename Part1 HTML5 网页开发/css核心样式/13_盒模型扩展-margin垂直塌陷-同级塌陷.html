@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin垂直塌陷-同级和父子塌陷</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    /* 在垂直方向如果有两个元素的外边距有相遇的，
+    浏览器中加载的真正的外边距不是两个间距的加和，
+    而是两个边距中值较大的，边距值小的塌陷到了
+    边距值大的值内部 */
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      margin-bottom: 50px;
+    }
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+</body>
+</html>

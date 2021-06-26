@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>子绝父相实现压盖效果</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      position: relative;
+      width: 440px;
+      border: 10px solid #f00;
+      margin: 0 auto;
+    }
+    /* .box p {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      margin-left: -50px;
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    } */
+    /* 大盒子嵌套在小盒子里面也可以居中显示 */
+    .box p {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      margin-left: -300px;
+      width: 600px;
+      height: 100px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+   <div class="box">
+     <img src="images/meng.jpg">
+     <p></p>
+    </div>
+</body>
+</html>

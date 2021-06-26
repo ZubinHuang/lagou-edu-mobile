@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>清除浮动的方法伪类或者溢出隐藏</title>
+  <style>
+    * {
+    margin:0;
+    padding: 0;
+  }
+  .box {
+    width: 1000px;
+    border: 10px solid red;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  /* 子元素设置浮动，父元素会出现塌陷，所以父级元素加overflow:hidden */
+  .box p { 
+    float: left;
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
+    background-color: skyblue;
+  }
+ 
+  </style>
+</head>
+<body>
+  <div class="box" class="clearfix">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+  <div class="box clearfix">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+</body>
+</html>

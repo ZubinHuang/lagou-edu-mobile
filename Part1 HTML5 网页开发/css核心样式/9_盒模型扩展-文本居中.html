@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本居中两种方式</title>
+  <style>
+    p {
+      width: 200px;
+      /* height: 200px; */
+      border: 1px solid #000;
+      /* 单行文本垂直居中让文字行高 line-height 等于盒子高度 height  */
+      line-height:200px ;
+      font-size: 200px;
+      /* 文本水平居中使用text-align */
+      text-align: center;
+      /* 多行文本居中，不设置height，让文本自适应高度，设置padding让视觉居中 */
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+    <p>这是一段文字<br/>
+      这是一段文字<br/>
+      这是一段文字<br/>
+    </p>
+</body>
+</html>

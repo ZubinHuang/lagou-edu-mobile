@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box1 {
+        width: 1000px;
+        /* height: 100px; */
+        /* overflow: hidden; */
+        border: 1px solid #f00;
+    }
+    /* 子盒子的宽度超过父盒子width，子盒子会溢出 */
+    .box1 p{
+        float: left;
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+        margin-right: 50px;
+    }
+    .box2 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border: 10px solid blue;
+      overflow: hidden;
+
+    }
+    .box2 .pbox1 {
+      position: absolute;
+      width: 100px;
+      height: 100%;
+      border: 20px dashed red;
+      overflow: hidden;
+    }
+    .box2 .pbox{
+      float: right;
+      width: 50px;
+      height: 100%;
+      border: 5px dashed green;
+    }
+  </style>
+</head>
+<body>
+    <!-- <div class="box1">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+    </div> -->
+    <!-- 子盒子溢出父盒子 -->
+    <div class="box2">
+      <p class="pbox1">
+        <p class="pbox">333</p></p>
+    </div>
+</body>
+</html>

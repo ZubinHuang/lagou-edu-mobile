@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒模型自动内减</title>
+  <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        border: 1px solid #000;
+      }
+      /*
+      子盒模型中， 只有一个子元素， 且子元素是类似 <div> 标签必须占一行的。
+      不设置子元素的 width 属性， 子元素的 width 属性值会自动加载父级元素的 width。
+      如果同时设置了子元素水平方向的 padding 和 border 、 margin， 不需要手动去进
+      行内减， 子元素的 width 会自动收缩尺寸。
+      子元素所有的水平方向的位置所有属性的加和等于父元素的 width      
+      */
+      .box p {
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+        border: 10px dotted blue;
+      }
+  </style>
+</head>
+<body>
+   <div class="box">
+     <p>我是子盒子</p>
+   </div>
+</body>
+</html>

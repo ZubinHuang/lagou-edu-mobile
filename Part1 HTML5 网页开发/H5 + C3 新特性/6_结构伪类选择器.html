@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>结构伪类选择器</title>
+  <style>
+    .box1 :first-child {
+      background-color: pink;
+    }
+    .box1 :last-child {
+      background-color: blue;
+    }
+    /* 选中的是.box1后面第三个而且第三个是p */
+    /* .box1 div:nth-child(2) {
+      background-color: red;
+    } */
+    .box1 p:nth-child(-n+6) {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <h2>二级标题</h2>
+    <div>内容</div>
+    <p>段落1</p>
+    <p>段落2</p>
+    <p>段落3</p>
+    <p>段落4</p>
+    <p>段落5</p>
+  </div>
+</body>
+</html>

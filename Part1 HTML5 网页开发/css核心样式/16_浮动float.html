@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float一排并排显示</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .box {
+      width: 1000px;
+      height: 200px;
+      border: 1px solid red;
+    }
+    .box p {
+      /* float需要在子级元素设置 */
+      /* float: left; */
+      float: right;
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      /* margin-right: 10px; */
+    }
+  </style>
+</head>
+<body>
+    <div class="box">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+      <p>6</p>
+    </div>
+</body>
+</html>

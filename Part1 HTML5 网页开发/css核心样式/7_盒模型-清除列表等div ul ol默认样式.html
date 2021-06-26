@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>清除列表等div ul ol默认样式</title>
+  <style>
+    /* 清除默认样式 */
+    /* body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li {
+      margin: 0;
+      padding: 0;
+    } */
+    ul,ol {
+      list-style: none;
+    }
+    /* 清除a标签的默认样式 */
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+    /* 清除粗体样式 */
+    b,strong {
+      font-weight: normal;
+    }
+    /* 设置初始化的公共样式 */
+    body {
+      color: #333;
+      font-size: 14px;
+      font-family: Arial, "宋体";
+    }
+  </style>
+</head>
+<body>
+    <div>这是div</div>
+    <h1>这是一级标题</h1>
+    <p>这是一个段落</p>
+    <ul>
+      <li>列表结构</li>
+      <li>列表结构</li>
+      <li>列表结构</li>
+      <li>列表结构</li>
+    </ul>
+    <a href="https://wwww.baidu.com">超级链接</a>
+</body>
+</html>

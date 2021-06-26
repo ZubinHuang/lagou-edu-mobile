@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>元素垂直和水平居中</title>
+  <style>
+    .box {
+      width: 80px;
+      /*
+        垂直居中：与多行文字类似，让父元素高度自适应， 
+        子元素高度自动撑开父级的高度， 
+        再给父元素设置相同的上下边距
+      */
+      /* height: 300px; */
+      background-color: tomato;
+      border: 1px solid red;
+      padding: 20px 0;
+    }
+    .box1 {
+      width: 20px;
+      height: 20px;
+      background-color: grey;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+   <div class="box">
+     <div class="box1"></div>
+   </div>
+</body>
+</html>

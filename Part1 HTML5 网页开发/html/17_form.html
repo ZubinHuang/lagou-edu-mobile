@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <form  name="first"> 
+      <!-- 用户名 -->
+      <p>
+        用户名：<input type="text" value="请输入用户名">
+      </p>
+      <!-- 密码 -->
+      <p>
+        密码：<input type="password">
+      </p>
+      <!-- 性别 -->
+      <p>
+        性别：
+        <!-- 默认选中 -->
+        <input type="radio" name="sex" checked="checked" id="nan"><label for="nan">男</label> 
+        <input type="radio" name="sex">女
+      </p>
+      <!-- 爱好 -->
+      <p>
+        爱好：
+        <!-- 使用label标签让用户选择体验更好 -->
+        <label><input type="checkbox" name="hobby">游泳</label>
+        <input type="checkbox" name="hobby">篮球
+        <input type="checkbox" name="hobby">排球
+        <!-- 默认选中 -->
+        <input type="checkbox" name="hobby" checked="checked">代码
+      </p>
+      <!-- 文件 -->
+      <p>
+        文件：
+        <input type="file" multiple = "multiple">
+      </p>
+      <!-- 文本域 -->
+      <p>
+        自我介绍:
+        <!-- 一个中文字符占两个字节，一个英文字符占一个字节 -->
+        <textarea rows="5" cols="30">请书写一个200字的自我介绍</textarea>
+      </p>
+      <!-- 下拉菜单 -->
+      <p>
+        城市：
+        <select>
+          <optgroup label="国内">
+            <option>北京</option>
+            <option>上海</option>
+            <option>重庆</option>
+            <option>天津</option>
+          </optgroup>
+          <optgroup label="国外">
+            <option>伦敦</option>
+            <option>纽约</option>
+            <option>巴黎</option>
+            <option>墨尔本</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <input type="button" value="普通按钮">
+        <input type="reset" value="重置按钮">
+        <input type="submit" value="提交按钮">
+        <input type="image" src="images/btn.png">
+      </p>
+    </form>
+</body>
+</html>

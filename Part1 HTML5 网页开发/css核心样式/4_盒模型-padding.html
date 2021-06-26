@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>padding层叠性</title>
+  <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        /* 利用综合属性和单一属性之间的层叠， 对综合属性设置单值法， 将四边内
+        边距设置相同， 在后面使用单一属性写法， 再次定义某个方向的属性值不同， 可以
+        实现单一属性层叠综合属性的一部分 */
+        padding-right: 20px;
+        background-color: pink;
+      }
+  </style>
+</head>
+<body>
+    <div class="box">
+      <p>这是一个段落标签</p>
+    </div>
+</body>
+</html>

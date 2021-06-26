@@ -1,0 +1,107 @@
+/* 大结构 */
+.footer {
+  width: 100%;
+  /* 盒子高度 */
+  height: 138px;
+  padding-top: 49px;
+  padding-bottom: 66px;
+  background-color: #fff;
+}
+.footer .footer-c {
+  height: 138px;
+}
+.footer .login-method {
+  float: left;
+  width: 312px;
+  height: 138px;
+  /* 边框线右侧灰色 */
+  border-right: 1px solid #e8e8e8;
+}
+.footer .login-method .login-method-btn {
+  display: block;
+  width: 180px;
+  height: 40px;
+  border: 1px solid #00b38a;
+  /* 两个小方块的上下间隔 */
+  margin-bottom: 16px;
+  color: #00b38a;
+  line-height: 40px;
+  text-align: center;
+}
+.footer .login-method .login-method-btn i {
+  display: inline-block;
+  width: 12px;
+  height: 15px;
+  margin-right: 7px;
+  background: url(../images/sprite_02.png) no-repeat -150px -220px;
+  /* 垂直方向基线对齐 */
+  vertical-align: middle;
+}
+.footer .login-method .login-method-btn span {
+  /* 垂直方向基线对齐 */
+  vertical-align: middle;
+}
+/* 悬浮背景变色 */
+.footer .login-method .login-method-btn:hover {
+  background-color: #00b38a;
+  color: #fff;
+}
+/* 悬浮背景小手机变色，更换图片找到变色图片位置即可 */
+.footer .login-method .login-method-btn:hover i {
+  background-position: -182px -220px;
+}
+/* 层叠公共样式 微信小程序图标位置定位，
+前面已经加载background图片，现在只需要挪位置 */
+.footer .login-method .mini-pro i {
+  width: 16px;
+  height: 14px;
+  background-position: -214px -54px;
+}
+.footer .login-method .mini-pro:hover i {
+  background-position: -172px -54px;
+}
+/* 定位子元素 */
+.footer .login-method .mini-pro {
+  position: relative;
+}
+/* 微信小程序二维码图片定位父盒子 */
+.footer .login-method .mini-pro img {
+  position: absolute;
+  left: 191px;
+  top: 0;
+  width: 140px;
+  height: 140px;
+  border: 1px solid #ccc;
+  /* 默认图片隐藏 */
+  display:none;
+}
+.footer .login-method .mini-pro:hover img {
+  /* 悬浮微信小程序按钮时候显示图片 */
+  display: block;
+}
+/* 服务部分浮动显示 */
+.footer .service {
+  float: left;
+  width: 757px;
+  /* 左边留白部分padding */
+  padding-left: 130px;
+  height: 138px;
+}
+/* 把三个都设置一样宽度，多余1px再padding */
+.footer .service dl {
+  float: left;
+  width: 252px;
+}
+.footer .service dl dt {
+  height: 23px;
+  margin-bottom: 27px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #555555;
+}
+.footer .service dl dd a {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+}

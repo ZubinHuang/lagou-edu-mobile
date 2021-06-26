@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动画</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      background-color: skyblue;
+      /* 添加绑定动画 */
+      /* animation: move 1s linear 3 2s; */
+      animation: move2 5s linear infinite;
+    }
+    /* 百分比定义动画细节 */
+    @keyframes move2 {
+      0%{background:skyblue;
+        left: 0px;
+        top:0px;}
+      25%{background: skyblue;
+          left:500px;
+          top:0px;
+          }
+      50%{background: skyblue;
+          left:500px;
+          top:500px;
+          }
+      75%{background: skyblue;
+          left:0;
+          top: 500px
+          }
+      100%{background: skyblue;
+          left:0;
+          top:0;
+          }
+   }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

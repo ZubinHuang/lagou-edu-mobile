@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5_盒模型-border属性</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      padding: 10px;
+      border: 10px solid red;
+      border-width: 20px;
+      background-color: pink;
+      /*
+      上边框： border-top
+      右边框： border-right
+      下边框： border-bottom
+      左边框： border-left
+      每个单一属性都必须与复合属性 border 一致， 设置三个属性值
+      */
+      border-top:10px solid #f00;
+      border-bottom: 10px solid #0f0;
+    }
+  </style>
+</head>
+<body>
+    <div class="box">
+      <p>这是一个段落标签</p>
+    </div>
+</body>
+</html>

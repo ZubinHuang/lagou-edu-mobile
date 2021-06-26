@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合并单元格</title>
+    <style>
+        td{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 合并单元格步骤 -->
+    <!-- 
+        1.先列出所有行<tr>， 以最小单元格为标准。
+        2.再添加每一行的<td>或<th>单元格。
+        3.划分单元格所在行时， 顶边对齐的属于同一行。
+        4.将所有行和列写完后， 再查看哪个单元格有跨行或跨列， 属性值的个数要参考最小
+        的单元格 
+    -->
+    <table border="1" style="border-collapse:collapse">
+        <tr>
+            <td colspan="2">1</td>
+            <td rowspan="2">2</td>
+            <td colspan="2">3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="2">5</td>
+            <td>6</td>
+            <td rowspan="2">7</td>
+        </tr>
+        <tr>
+            <td rowspan="2">8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td colspan="2">12</td>
+            <td>13</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
