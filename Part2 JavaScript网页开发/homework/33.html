@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+           28.   苹果3元一个，鸭梨2元一个，桃子1元一个。现在想用200元正好买100个水果，在控制台中列出所有可能性。
+        */                         
+        var height = parseInt(prompt("请输身高")); 
+        var weight = parseInt(prompt("请输体重")); 
+        var bmi = (height-108)*2 - weight || 0;
+        if (bmi > 10){
+          console.log("体重偏胖")
+        }else if (bmi < -10){
+          console.log("体重偏瘦")
+        }else {
+          console.log("体重正常")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

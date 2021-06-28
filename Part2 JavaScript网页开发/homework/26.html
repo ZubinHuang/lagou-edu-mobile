@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+             26.   用户输入一个数字，判断这个数字是否是质数。
+             质数就是指它的约数只有1和它本身。看约数个数是否是2.
+        */           
+        var n = parseInt(prompt("请输一个数字n","20"));  
+        var num = 0;
+        for(var i = 1; i <= n; i++){    
+                if ( n%i == 0){
+                   num ++;
+                } 
+            
+        }
+        if( num == 2) {
+              alert(n+"是质数！");
+            }
+            else {
+              alert(n+"不是质数！");
+            }
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

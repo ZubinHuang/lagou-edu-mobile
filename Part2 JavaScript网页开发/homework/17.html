@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            17.判断闰年
+            1、年份能被4整除，但不能被100整除
+
+            2、年份能被400整除
+        */
+        var num1 = parseInt(prompt("请输入一个年份","2004"));        
+        if ((num1 % 4 == 0 &&  num1 % 100 != 0) || num1 % 400 == 0){            
+                alert(num1+"是闰年");
+        }else{
+            alert(num1+"不是闰年");
+        }
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

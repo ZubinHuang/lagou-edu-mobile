@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+           35.   输入月份，显示当月天数（输入2月时需要再次输入年份判断是不是闰年后在显示当月天数）  
+           实现的一个关键点是：二月的天数是不确定的，当我们输入2的时候，需要判断这一年是平年还是闰年。
+        */                         
+      var month = parseInt(prompt("请输入月份"));
+       var year = parseInt(prompt("请输入年份"));
+        //month是字符串类型需要进行类型转换;
+       switch( month ){
+           case 1 : 
+           case 3 : 
+           case 5 : 
+           case 7 : 
+           case 8 : 
+           case 10 : 
+           case 12 : 
+               alert("31天");
+               break;
+           case 4:
+           case 6:
+           case 9:
+           case 11:    
+               alert("30天");
+               break;
+           case 2:
+                  //2月要考虑闰年 
+               if(year % 4 === 0 && year % 100 !== 0 || year % 400 === 0){
+                   alert("29天");
+               }else{
+                   alert("28天");
+               }
+       }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

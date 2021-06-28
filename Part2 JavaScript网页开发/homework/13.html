@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            13. 如果今天是星期二，那么1000天后是星期几？用户输入一个天数，计算这个天数后是星期几。
+        */
+        var today = parseInt(prompt("请输入今天是星期几","2"));
+        var day = parseInt(prompt("请输入一个任意整数天数","1000"));
+
+        var future = (today + day) % 7;
+        if(future == 0){
+             future = 7;
+        }
+
+        alert("星期"+today+"的"+day+"天之后是星期" + future);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
