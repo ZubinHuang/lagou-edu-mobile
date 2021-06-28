@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{font-size: 26.6667vw;}
+body{background: #f5f5f9;}
+a{text-decoration: none;}
+
+/* px to rem插件设置基准font-size值为100后（默认值16），px直接转化为rem即可 */
+#cart-head{
+    height: .44rem;
+    line-height: .44rem;
+    border: 1px solid rgba(0,0,0,.1);
+    background-color: #fff;
+    position: relative;
+    text-align: center; 
+}
+
+#cart-head .title{
+    font-size: .17rem;
+    color: #222;
+}
+
+#cart-head img{
+    /* display: inline-block; */
+    width: .07rem;
+    height: .08rem;
+}
+
+#cart-head .loc-name{
+    font-size: .12rem;
+    color: black;
+}
+
+
+#login{
+    width: 3.50rem;
+    height: .3rem;
+    font-size: .12rem;
+    line-height: .2rem;
+    background-color: #ffe37e;
+    margin: .1rem;
+    box-sizing: border-box;
+    padding: .05rem .12rem;
+    position: relative;
+    border-radius: .07rem;
+}
+
+#login .button a{
+    /* display: inline-block; */
+    /* text-decoration: none; */
+    background: #222;
+    color: #ffe37e;
+    /* margin-left: .1rem; */
+    padding: 0 .02rem;
+    position: absolute;
+    right: .1rem;
+    border-radius: .03rem;
+}
+
+#cart-content{
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#cart-content img{
+    width: 22%;
+    height: 22%;
+    margin-top: .6rem;
+}
+
+#cart-content .title{
+    display: inline-block;
+    width: 2.10rem;
+    height: .2rem;
+    font-size: .14rem;
+    color: #666;
+    position: absolute;
+    left: .8rem;
+}
+
+#cart-content .click{
+    width: .54rem;
+    line-height: .24rem;
+    font-size: .12rem;
+    background: #fff;
+    margin-top: .3rem;
+    position: absolute;
+    left: 1.55rem;
+    /* text-align: center; */
+    border-radius: .07rem;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+
+#guess-top img{
+    display: block;
+    width: 100%;
+    height: .3rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#guess-content{
+    display: flex;
+    width: 100%;
+    height: 2.71rem;
+    box-sizing: border-box;
+    background: #fff;
+    /* position: fixed; */
+}
+
+#guess-content a{
+    width: 50%;
+}
+
+#guess-content img{
+    display: block;
+    width: 1.71rem;
+    height: 1.71rem;
+    border-radius: .06rem .06rem 0 0;
+    margin: 0 auto;
+}
+
+#guess-content .goods-title{
+    width: 1.59rem;
+    height: .335rem;
+    font-size: .13rem;
+    color: #333;
+    font-weight: bold;
+    line-height: .17rem;
+    margin: .04rem auto 0;
+    overflow: hidden;
+}
+
+#guess-content .tag img{
+    width: .24rem;
+    height: .12rem;
+    margin: .05rem .12rem .12rem;
+}
+
+#guess-content .coin{
+    position: absolute;
+    margin: 0.05rem .12rem ;
+    width: .12rem;
+    line-height: .136rem;
+    font-size: .12rem;
+    color: #ff4422;
+}
+
+#guess-content .price{
+    position: absolute;
+    margin-left: .24rem;
+    width: .3rem;
+    font-size: .18rem;
+    color: #ff4422;
+}
+
+
+#guess-bottom{
+    width: 100%;
+    height: 1.20rem;
+    text-align: center;
+}
+#guess-bottom img{
+    width: 2.10rem;
+    height: .12rem;
+    margin-bottom: .7rem;
+}
+#cart-foot{
+    display: flex;
+    width: 100%;
+    height: .49rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+}
+
+#cart-foot a{
+    width: 20%;
+    text-align: center;
+}
+
+#cart-foot img{
+    display: block;
+    width: .24rem;
+    height: .24rem;
+    margin: .06rem auto 0;
+}
+
+#cart-foot p{
+    font-size: .12rem;
+    color: #666666;
+}
+
+#cart-foot .yes{
+    font-size: .12rem;
+    color: #000000;
+    font-weight: bold;
+}   

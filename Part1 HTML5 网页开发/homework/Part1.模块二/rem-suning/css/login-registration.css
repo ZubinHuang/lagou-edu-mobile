@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* px to rem插件设置基准font-size值为100后（默认值16），px直接转化为rem即可 */
+html{font-size: 26.667vw;}
+body{
+    font-size: 16px;
+    color: #222222;
+}
+a{text-decoration: none;}
+
+#header{
+    height: .365rem;
+    box-sizing: border-box;
+    padding: .065rem .12rem 0;
+}
+
+#header span a{
+    font-size: .12rem;
+    line-height: .3rem;
+    color: #222222;
+    float: right;
+}
+
+
+#content{
+    /* display: flex;class="welcome" */
+    height: 3.16rem;
+    margin-top: .28rem;
+    padding: 0 .375rem;
+}
+
+#content .welcome{
+    display: flex;
+    font-size: .18rem;
+    line-height: .45rem;
+}
+#content .welcome img{
+    width: .45rem;
+    height: .45rem;
+    margin-right: .15rem;
+}
+
+/* #content .welcome{
+    margin-top: .12rem;
+} */
+
+#content .num{
+    height: .45rem;
+    color: #cccccc;
+    font-size: .15rem;
+    line-height: .5rem;
+    box-sizing: border-box;
+    margin-top: .3rem;
+    border-bottom: .01rem solid #bbb;
+}
+
+/* #content .inputbox1 .phoneNum{
+    display: inline-block;
+    font-size: .12rem;
+    
+
+} */
+
+#content .yzm{
+    /* display: inline-block;
+    height: .39rem;
+    box-sizing: border-box;
+    margin-top: .15rem;
+    border-bottom: .01rem solid #bbb; */
+    color: #cccccc;
+    font-size: .15rem;
+}
+
+#content .yzm .yzm1{
+    display: inline-block;
+    width: 1.92rem;
+    /* height: .335rem; */
+    height: .39rem;
+    box-sizing: border-box;
+    margin-top: .15rem;
+    border-bottom: .01rem solid #bbb;
+}
+
+#content .yzm .yzm2{
+    width: .99rem;
+    height: .39rem;
+    line-height: .39rem;
+    text-align: center;
+    float: right;
+    box-sizing: border-box;
+    margin-top: .15rem;
+    border-radius: .05rem;
+    border: .01rem solid #cccccc;
+}
+
+#content .title{
+    height: .176rem;
+    color: #999999;
+    font-size: .12rem;
+    margin-top: .06rem;
+}
+
+#content .button{
+    height: .884rem;
+    color: #222222;
+    margin-top: .3rem;
+    text-align: center;
+}
+
+#content .button .button1{
+    height: .45rem;
+    line-height: .45rem;
+    font-size: .17rem;
+    background: #ffcc00;
+    border-radius: .09rem;
+}
+
+#content .button .button2{
+    /* width: .90rem; */
+    height: .224rem;
+    font-size: .15rem;
+    margin-top: .21rem;
+}
+
+
+#footer{
+    height: .952rem;
+    color: #999999;;
+    font-size: .12rem;
+    text-align: center;
+    margin-top: 1.75rem;
+}
+
+#footer .way{
+    display: inline-block;
+    width: 2.40rem;
+    height: .176rem;
+    margin-bottom: .095rem;
+}
+
+#footer .login-way{
+    display: inline-block;
+    width: 2.40rem;
+    height: .33rem;
+    margin-bottom: .175rem;
+    /* justify-content: space-around; */
+    /* text-align: center; */
+    /* position: fixed; */
+}
+
+#footer .login-way a{
+    display: inline-block;
+    width: .6rem;
+    height: .33rem;
+    /* text-align: center; */
+}
+
+#footer img{
+    width: .33rem;
+    height: .33rem;
+}
+
+#footer .agree{
+    display: inline-block;
+    line-height: .136rem;
+    /* width: 2.536rem; */
+    height: .176rem;
+}
+
+#footer span{
+    display: inline-block;
+}
+#footer .agree b{
+    display: inline-block;
+    color: #101010;
+}
+
+#footer .agree a{
+    display: inline-block;
+    color: #101010;
+    text-decoration: underline;
+} 

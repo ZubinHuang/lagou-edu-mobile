@@ -3,7 +3,7 @@ body {
 	max-width: 540px;
 	min-width: 320px;
 	margin: 0 auto;
-	font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft	Yahei",STXihei,hei;
+	font: normal 16px/1.5 PingFangSC-regular,Tahoma,Lucida Grande,Verdana,Microsoft Yahei,STXihei,hei;
 	color: #000;
 	background: #f2f2f2;
 	overflow-x: hidden;
@@ -409,8 +409,9 @@ h1,h2,h3,h4,h5,h5 {
   /* 联系方式及其版权 */
   .toolbox {
     height: 100px;
-    padding-top: 12px;
+    padding-top: 26px;
     padding-bottom: 50px;
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
 }
 .toolbox .toolLink{
     display: flex;
@@ -428,6 +429,29 @@ h1,h2,h3,h4,h5,h5 {
     border-radius: 4px;
     text-decoration: none;
     border: 1px solid #999999;    
+}
+.toolbox .toolLink a span:nth-child(1){
+    display: block;
+}
+.toolbox .toolLink a span:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin-right: 3px;    
+}
+.toolbox .toolLink a:nth-child(1) span:nth-child(1)::before {   
+    background: url(../images/tell.png) no-repeat 0 0;
+    background-size: 13px 13px;    
+}
+.toolbox .toolLink a:nth-child(2) span:nth-child(1)::before {   
+    background: url(../images/download.png) no-repeat 0 0;
+    background-size: 13px 13px;
+   
+}
+.toolbox .toolLink a:nth-child(3) span:nth-child(1)::before {    
+    background: url(../images/earth.png) no-repeat 0 0;
+    background-size: 13px 13px;
 }
 .toolbox .toolLink a span:nth-child(2){
     font-size: 13px;
@@ -457,4 +481,99 @@ h1,h2,h3,h4,h5,h5 {
     color: #666;  
     text-align: center;
     line-height: 12px;
+}
+
+/* 底部导航 */
+.foot-nav {
+    position: fixed;
+    box-shadow: 0 -5px 15px 0 rgba(0,0,0,.05);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 49px;
+    background-color: #fff;
+    z-index: 10;
+}
+.foot-nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;   
+   
+}
+.foot-nav li {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.foot-nav li a {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin-top: 1px;
+}
+.foot-nav li:nth-child(2) a{
+    margin-top: 4px;
+}
+.foot-nav li:nth-child(3) a{
+    margin-top: 5px;
+}
+.foot-nav li a span{
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    
+}
+.foot-nav li a i{
+    width: 28px;
+    height: 28px;
+    background: url("../images/home1.png") no-repeat 0px 0px;
+    background-size: 28px auto;   
+    text-align: center;   
+    line-height: 28px;
+}   
+
+.foot-nav li:nth-child(2) a i{   
+    background: url("../images/earth2.png") no-repeat 0px 0px;  
+    background-size: 28px 28px;  
+    width: 28px;
+    height: 26px;
+    margin-right: 1px;
+   
+}  
+.foot-nav li:nth-child(3) a i{   
+    background: url("../images/message.png") no-repeat 0px 0px;
+    background-size: 21px 21px;  
+    width: 22px;
+    height: 22px;
+    margin-right: 1px;
+    margin-bottom: 2px;
+    margin-top: 1px;
+}
+.foot-nav li:nth-child(4) a i{   
+    background: url("../images/person.png") no-repeat 0px 0px;
+   
+}
+.foot-nav li:nth-child(2) span,.foot-nav li:nth-child(3) span{   
+    background-size: 16px auto;
+}   
+.foot-nav li a span{
+    font-size: 11px;
+    line-height: 12px;
+    color: #666666;
+    margin-top: 2px;
+} 
+.foot-nav li:nth-child(1) a span{
+    color: #0086f6;
+}
+.foot-nav li:nth-child(1) a i {
+    margin-top: 1px;
 }
