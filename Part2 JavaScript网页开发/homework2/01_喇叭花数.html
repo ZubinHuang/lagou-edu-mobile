@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>喇叭花数</title>
+  <script>
+    // 求喇叭花数
+    function labaFun (n,m){
+        for(var i = n; i <= m; i++){        
+          var ge = i%10;
+          var shi = parseInt((i/10))%10;
+          var bai = parseInt((i/100))%10;
+          var sum = sumProduct(ge)+sumProduct(shi)+sumProduct(bai);
+          if (sum == i){
+            console.log(i);
+          }          
+      }
+    }
+      
+    //求阶乘
+    function sumProduct(n){   
+        var sumPro = 1;
+        for(let  i = 1; i <= n; i++){
+        sumPro *= i;
+        }               
+      return sumPro;
+    }
+    labaFun(100,999);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
