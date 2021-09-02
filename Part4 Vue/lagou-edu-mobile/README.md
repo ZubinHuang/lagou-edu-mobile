@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+### APPdemo
+
+![](https://github.com/ZubinHuang/lagou-edu-mobile/blob/master/Part4%20Vue/lagou-edu-mobile/demo.gif)
+
